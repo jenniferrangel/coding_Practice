@@ -1,0 +1,56 @@
+This part investigates the use of classes and structures, basically
+the same thing.  They're a way for you to keep track of a lot of 
+distinct objects that all act the same way.  An example in our code
+is cells in a tissue, or perhaps proteins in a blood clot. 
+
+obj_practice_1.cpp has examples of defining structures and classes.
+
+obj_practice_2.cpp has examples of using multiple classes together.
+
+obj_practice_3.cpp/.h/main.cpp is a large example of how you would 
+store these objects in practice. To compile this type "make all".
+It will make some intermediate "object" (.o) files. Don't worry 
+about these. To clear it up and recompile it, type "make clean" 
+then "make all".  NOTE that the compiled program isn't a.out.
+
+----------------------------------------
+Notes on the makefile:
+----------------------------------------
+
+typing "make" into bash automatically executes "makefile",
+and so these are industry standard names.
+
+What it does is it runs commands like "g++ ...." to 
+compile a large program in pieces.  
+
+When you type "make all", it searches for the command words after "all".
+You see, 
+all: program 
+
+And so it checks the program line, 
+
+program:obj_practice_3.o Roster.o student.o 
+	$(CXX) $(CXXFLAGS) obj_practice_3.o Roster.o student.o -o program.out
+
+
+So, it first will check that the make commands "obj_practice_3.o" etc. are
+executed.  So it will jump down to the obj_practice_3.o line,
+
+obj_practice_3.o: obj_practice_3.cpp
+	$(CXX) $(CXXFLAGS) -c obj_practice_3.cpp
+
+and see if the output obj_practice_3.o has been made.  If not, 
+it will check that obj_practice_3.cpp exists and then use it in
+the line 
+$(CXX) $(CXXFLAGS) -c obj_practice_3.cpp
+
+At the top, you see $(CXX) is substituted for -g++ -static-libstdc++
+and you can add flags in to modify the compiler behavior, e.g. 
+-Wall causes error messages to print out.
+
+Lastly -c causes the compiler causes obj_practice_3.cpp to 
+compile into an "object" file (.o), all of which will be tied together
+into the program at the end of 
+
+program:obj_practice_3.o Roster.o student.o 
+	$(CXX) $(CXXFLAGS) obj_practice_3.o Roster.o student.o -o program.out

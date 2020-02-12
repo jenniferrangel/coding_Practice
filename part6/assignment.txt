@@ -1,0 +1,5 @@
+Each of these is a standalone c++ file that has some useful
+data structures and miscellaneous tools that you can use.
+
+None of these are built with .h files, but they could be made
+into having them.

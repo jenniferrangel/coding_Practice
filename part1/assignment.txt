@@ -1,0 +1,26 @@
+Begin by typing
+module load extra
+module avail GCC
+You'll see a list of GCC/(Numbers).
+Type
+module load GCC/(Biggest number).
+
+open "vim_practice_1.cpp" by typing 
+vim vim_practice.cpp
+
+Follow the instructions when you start, they'll be in 
+the comments, 
+
+//Comments look like this
+
+Next, do the same for "vim_practice_2.cpp". This one will be easier if you
+use shortcuts.
+
+Lastly, do the same thing for "vim_practice_3.cpp". 
+
+After you do all that, then you're done with part 1 and should feel more comfortable editing files.
+To make new files, just pretend they already existed.  To make "test.cpp", just type "vim test.cpp".
+
+Push your solutions to github, to make a good habit of saving. 
+
+Try part 2 when you're ready!

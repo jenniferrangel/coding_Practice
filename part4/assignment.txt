@@ -1,0 +1,7 @@
+function_practice_1.cpp and function_practice_4 have some problems.  
+
+Read and understand function_practice_2.cpp and function_practice_3.cpp, as well
+as the .h file referenced in function_practice_3.h. It's basically another c++
+file.
+
+Don't forget, once you're done, commit and push the finished version to github.

@@ -1,0 +1,12 @@
+Now that you're totally fluent in file navigation with vim, let's practice some
+actual coding practice.  If you want to keep the file open from the other folder
+for a cheat sheet of vim, when you have vim open type
+:vsplit ~/coding_Practice/part1/vim_practice_(2,3,4).cpp
+Note that if your directory is different, you might need to replace ~/coding_Practice
+with ~/...(Other containing folders).../coding_Practice.
+
+==============
+Start with cpp_practice_1.cpp and follow the instructions.  These are self-contained, so go in order.
+
+
+When you're done, push your finished versions to github.

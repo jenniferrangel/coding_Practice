@@ -1,0 +1,4 @@
+Same as part 2, go through the cpp files as needed. 
+part1 has shortcuts for vim and window management.
+
+When you're done, push your solutions to your github account.
