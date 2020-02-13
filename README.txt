@@ -78,3 +78,5 @@ git merge
 
 git push 
 (Updates your online repository with the committed changes)
+
+git remote -v
