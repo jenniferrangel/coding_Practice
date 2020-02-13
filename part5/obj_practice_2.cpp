@@ -191,8 +191,7 @@ int main() {
 	//Student that would calculate variance.
 	//
 	//Remember, the variance is calculated by 
-	//sum(X-mean)^2
-	//
+	//1/N sum_i=1:N (X-mean)^2
 	return 0;
 }
 
