@@ -6,7 +6,7 @@ Type
 module load GCC/(Biggest number).
 
 open "vim_practice_1.cpp" by typing 
-vim vim_practice.cpp
+vim vim_practice_1.cpp
 
 Follow the instructions when you start, they'll be in 
 the comments, 

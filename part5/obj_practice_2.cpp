@@ -175,6 +175,11 @@ int main() {
 	//=======================Problem 1==================================
 	//==================================================================
 	//==================================================================
+	//  Why do we need to cap the number of students?  Where is the cap set?
+	//  What would happen if the number of students exceeded 100?
+	//
+	//  Make a for loop to add 100 students to a new Roster * directory2.
+	//
 	//
 	//
 	//==================================================================
@@ -182,6 +187,11 @@ int main() {
 	//=======================Problem 2==================================
 	//==================================================================
 	//==================================================================
+	//Uncomment calc_Variance() {...} in Roster.  Add a new function to
+	//Student that would calculate variance.
+	//
+	//Remember, the variance is calculated by 
+	//1/N sum_i=1:N (X-mean)^2
 	return 0;
 }
 

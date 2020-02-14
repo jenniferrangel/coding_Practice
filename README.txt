@@ -2,7 +2,7 @@ This is a list of short assignments to help familiarize you with
 usage of our code and a refresher on basic C++.
 
 When you log in and see your command line, clone this with the command
-git clone https://github.com/cmich004/coding_Practice.git 
+git clone https://github.com/<Your github account name>/coding_Practice.git 
 (Notice that this link is under "clone or download" for future reference)
 
 Start with the folder part1, then part2, etc.  They're ordered by complexity.
@@ -78,3 +78,5 @@ git merge
 
 git push 
 (Updates your online repository with the committed changes)
+
+git remote -v
