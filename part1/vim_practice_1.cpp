@@ -9,7 +9,7 @@ int main() {
 	//Use the arrow keys to maneuver for now and uncomment the line of code
 	//below. Enter insert mode by pressing "i" and then leave it by pressing
 	// "esc".  
-	//cout << "Hello, World!" << endl;
+	cout << "Hello, World!" << endl;
 
 	// Once you've uncommented it, save and quit by entering command mode and typing :wq.
 	// When you type : in command mode, you can see the command in the
