@@ -52,6 +52,7 @@ int main() {
 	//and the ones that say "Don't print me!"
 	//Don't change the logic, but only the values defined below.
 
+/*
 	int switch_entry = 4;
 
 	switch (switch_entry) { 
@@ -139,7 +140,8 @@ int main() {
 			cout << "Get this to print - 8" << endl;
 		}
 	}
-	
+
+*/
 
 	//===================================================
 	//===================================================
@@ -159,18 +161,20 @@ int main() {
 	//This line of code adds together all numbers
 	//between 1 and n_max, but only if n_max is 
 	//greater than 30.
-	/*
-	 * int n_max = 40; 
-	 * if (n_max > 30) { 
-	 * int sum = 0;
-	 * for (int i = 0; i < n_max; i++) {
-	 * sum = sum + (i + 1);
-	 * //Alternately written as
-	 * //sum += (i+1);
-	 * }
-	 * }
-	 * cout << "sum = " << sum << endl;
-	 */
+
+/*
+	int n_max = 40;
+int sum = 0;
+if (n_max > 30) { 
+
+	for (int i = 0; i < n_max; i++) {
+		sum = sum + (i + 1);
+		//Alternately written as
+		//sum += (i+1);
+	}
+}
+cout << "sum = " << sum << endl;
+*/	 
 
 
 	//===================================================
@@ -186,14 +190,15 @@ int main() {
 	//It's supposed to print every sixth number between 1 and 100.
 	//Make sure it does that.
 	
-	/* <----- Having just the endcaps also do block comments. 
-	Remember shift-v for visual line, d to delete.
+	// <----- Having just the endcaps also do block comments. 
+	//Remember shift-v for visual line, d to delete.
 
 
 	int k = 0;
 
-	while (true) { 
+	/*while (true) { 
 		// % is modulus. It returns the remainder after integer division.
+		
 		if (k > 0) { 
 			cout << k << endl;
 		}
@@ -204,8 +209,15 @@ int main() {
 		}
 		k += 6;
 	}
-
 	*/
+	
+	for(int k=0; k<=100; k++){
+		if (k % 6 ==0){
+
+			cout << k << endl;
+		}
+	}
+	
 
 
 	return 0;

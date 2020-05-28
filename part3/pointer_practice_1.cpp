@@ -51,6 +51,18 @@ int main() {
 
 	int * w = NULL;
 
+	w = &a;
+	*w = 8;
+	cout << "a = " << a << endl;
+
+	w = &b;
+	*w = 9;
+	cout << "b = " << b << endl;
+
+	w = &c;
+	*w = 10;
+	cout << "c = " << c << endl;
+	
 	//===============================================
 	//===============================================
 	//=================Problem 2=====================
@@ -60,14 +72,17 @@ int main() {
 	
 
 	int N = 5;
-	int * M = &N;
+	int * M = &N;                   //initialized pointer M and gave it location of N
 
-	cout << "N: " << N << endl;
-	cout << "&N: " << &N << endl;
-	cout << "M: " << M << endl;
-	cout << "*M: " << *M << endl;
+	cout << "N: " << N << endl;     //5
+	cout << "&N: " << &N << endl;   // location of N because & gives you the adress
+	cout << "M: " << M << endl;     // location of N since M is a pointer 
+	cout << "*M: " << *M << endl;   // gives the thing it is pointing at in this case value of N so 5
 
 	cout << "Why is this different between re-running the program?" << endl;
+
+	//different every time we run because it is stored in different locations 
+
 
 	//===============================================
 	//===============================================
@@ -75,11 +90,12 @@ int main() {
 	//===============================================
 	//===============================================
 	//There is no reason you can't have pointers that point to pointers.
-	int ** L = NULL;
-	L = &M; 
-	cout << "&M: " << &M << endl;
-	cout << "L: " << L << endl;
-	cout << "M: " << M << endl;
-	cout << "*L: " << *L << endl;
+	
+	int ** L = NULL;                  //L is a pointer pointing to a pointer
+	L = &M;                          // L is given the location of M
+	cout << "&M: " << &M << endl;    //because it has an &, this prints location of M
+	cout << "L: " << L << endl;      //location of M
+	cout << "M: " << M << endl;      //location of N because M is pointer
+	cout << "*L: " << *L << endl;    //gives N because L -> M -> N
 	return 0;
 }

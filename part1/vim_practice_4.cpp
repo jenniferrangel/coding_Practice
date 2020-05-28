@@ -9,7 +9,12 @@ int main() {
 	int my_super_important_number = 5;
 
 	if (my_super_important_number > 2) {
-		if (other_important_thing) { 
+		if (other_important_thing) {		
+			int i = 1;
+			do { 
+				cout << "This code is important and reusable." << endl;
+				i++;
+			} while (i < my_super_important_number); 
 			//Oh no! I need a loop in here.
 			//
 			//Go to vim_practice_3.cpp by pressing ctrl_w in 

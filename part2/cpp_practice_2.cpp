@@ -53,6 +53,18 @@ int main() {
 	//Change the 24th element to "16"
 	//Print the array.
 	 
+		int arr[50];
+		int k = 0;
+		
+		for (int i = 0; i<50; i++){
+			arr[i]=2*k;
+			k++;
+			}
+		arr [24] = 16;
+
+		for(int j = 0; j < 50; j++){
+			cout << arr[j] <<endl;
+		}
 
 
 	//=================================================
@@ -76,7 +88,7 @@ int main() {
 	for (int i = 0; i < 5; i++) { 
 		for (int j = 0; j < 5; j++) { 
 			my_table[i][j] = i*j;
-			my_table[i][j] += 1;
+			my_table[i][j] += 1;      //because our index starts at 0 and want it at 1
 		}
 	}
 
@@ -96,9 +108,56 @@ int main() {
 	// 91,92,...,100.
 	//Hint:  Shift V, y and p to highlight, copy, paste the code above and modify it.
 	//You should use % (modulus) to calculate the entries of the table.
+ 	//If you're wondering what kind of object the array variable "my_table" is
+ 	//without any [] after it, it's a pointer. That will be in part 3.
+	
+	
+	int new_array [10][10];
+	
+		for (int i=0; i<10; i++){
+			
+			for(int j=0; j<10; j++)
+			{
+				new_array[i][j] = (10*i) + j+1;
+			
+				cout << new_array[i][j] <<",";
+			}
+			cout << endl;
+		}
+	
+	/*
+	int new_array [10][10];
+	int j = 0;
 
-	//If you're wondering what kind of object the array variable "my_table" is
-	//without any [] after it, it's a pointer. That will be in part 3.
+		for (int i=0; i<10; i++){                                     	            
+			                                            	
+			//int j=0;             	                                                      		  
+				if(j <9) 
+				{
+					new_array[i][j] = (10*(i+1)) % (9-j);
+					j++;
+				}
 
-	return 0;
-}
+				if( j == 9)                                         	  
+				{                                                   	  
+					new_array[i][j] = (i+1)*(j+1);  
+				
+				}
+		}
+
+	for (int i = 0; i<10; i++){
+
+		for (int j = 0; j <10; j++)
+		{
+
+			cout << new_array [i][j] <<",";
+		}
+		cout <<endl;
+	}
+	*/
+                	  
+       return 0;         	  
+                	  
+                	  
+}                	  
+

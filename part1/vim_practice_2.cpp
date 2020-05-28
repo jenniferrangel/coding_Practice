@@ -12,9 +12,18 @@ int main() {
 	//...
 	//9
 	//10.
-	cout << "1" << endl;
-	//Different modes of vim:
-	
+	cout << "1" << endl; 
+	cout << "2" << endl;
+	cout << "3" << endl; 
+	cout << "4" << endl;
+	cout << "5" << endl;
+	cout << "6" << endl;
+	cout << "7" << endl;
+	cout << "8" << endl;
+	cout << "9" << endl;
+	cout << "10" << endl;
+       
+
 	//Command mode (what you start in)
 	//Funtions:  Type /<stuff> to search the document
 	//           for <stuff>.  Type enter, and then n to search forward
@@ -23,7 +32,7 @@ int main() {
 	//           in the same way.
 	//Type :<line number> (enter) to jump to a line.
 	//Various shortcuts: 
-	//u - undo (press repeatedly)
+	//u - undo (press repeatedly) 
 	//ctrl-R - redo
 	//o - insert a line above the cursor and enter insert mode
 	//O - Same thing but after the cursor.

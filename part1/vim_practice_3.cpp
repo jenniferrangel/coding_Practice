@@ -17,5 +17,6 @@ int main() {
 			 i++;
 		 } while (i == 2); 
 	}
-	return 0;
+	return 0; 
 }
+
